@@ -26,9 +26,9 @@
     cp .env.example .env
     ```
 
-    Fill in the necessary values in the `.env` file.
+    The defaults use project-specific Postgres credentials and port `5433` so they do not clash with another local database.
 
-4. Start docker for Postgress image:
+4. Start Docker for the Postgres image:
 
     ```sh
     docker compose up -d
