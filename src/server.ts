@@ -1,5 +1,5 @@
 import "dotenv/config";
-import app from "./app.js"; // Note the .js extension (required for NodeNext)
+import app from "./app";
 
 const PORT = process.env.PORT || 3000;
 

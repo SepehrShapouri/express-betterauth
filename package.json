@@ -1,8 +1,9 @@
 {
-  "name": "express-server-better-auth-drizzle-pg",
+  "name": "express-betterauth",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+  "type": "module",
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "start": "node dist/server.js",

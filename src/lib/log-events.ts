@@ -25,7 +25,6 @@ const logEvents = (message: string, logFileName: string) => {
     }
 };
 
-// Logger middleware
 const logger = (
     err: Error,
     req: Request,
