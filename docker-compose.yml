@@ -1,8 +1,7 @@
-version: '3.8'
 services:
   postgres:
-    image: postgres:latest
-    container_name: exporess_postgres_db
+    image: postgres:16-alpine
+    container_name: ctrl_server_postgres
     restart: unless-stopped
     environment:
       POSTGRES_USER: ${DB_USER}
@@ -11,7 +10,7 @@ services:
     ports:
       - "${DB_PORT}:5432"
     volumes:
-      - postgresdata:/var/lib/postgresql
+      - postgresdata:/var/lib/postgresql/data
 volumes:
   postgresdata:
     driver: local
