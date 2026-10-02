@@ -5,14 +5,13 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "dev": "tsx watch src/server.ts",
-    "start": "node dist/server.js",
+    "dev": "node api.js && tsx watch src/server.ts",
+    "start": "node api.js && node dist/server.js",
     "db:generate": "drizzle-kit generate --config=./src/drizzle.config.js",
     "db:push": "drizzle-kit push --config=./src/drizzle.config.js",
     "db:pull": "drizzle-kit pull --config=./src/drizzle.config.js",
     "db:migrate": "drizzle-kit migrate --config=./src/drizzle.config.js",
-    "db:studio": "drizzle-kit studio --config=./src/drizzle.config.js",
-    "preinstall": "node dist/setup.js"
+    "db:studio": "drizzle-kit studio --config=./src/drizzle.config.js"
   },
   "keywords": [],
   "author": "",
